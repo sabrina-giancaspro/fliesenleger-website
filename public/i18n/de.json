@@ -1,0 +1,60 @@
+{
+  "NAVBAR": {
+    "CALL_TO_ACTION": "Kontaktieren Sie mich unter dieser Nummer",
+    "SELECT_LANGUAGE": "Sprache auswählen",
+    "HOME": "Startseite",
+    "CONTACT": "Kontakt",
+    "ABOUT_ME": "Über mich",
+    "SERVICES": "Was ich mache"
+  },
+  "CONTACT_INFO": {
+    "PHONE": "Telefon",
+    "EMAIL": "E-Mail"
+  },
+  "MODAL": {
+    "CLOSE": "Schließen"
+  },
+  "CARD_TITLES": {
+    "FLIESEN": "Fliesenarbeit",
+    "BAD": "Badesanierung",
+    "MALER": "Malerarbeit",
+    "BODEN": "Fugenloser Spachtelboden",
+    "HAUSMEISTER": "Hausmeisterservice"
+  },
+  "FLIESEN": {
+    "DESCRIPTION1": "Seit über 30 Jahren stehe ich Ihnen als Fliesenleger zur Verfügung, seit 2012 in Berlin und Brandenburg. Ich bin spezialisiert auf die fachgerechte Verlegung von Fliesen, Platten und Mosaiken sowohl im Innen- als auch im Außenbereich. Ob im Badezimmer, in der Küche, auf Terrassen oder Treppen: Ich arbeite mit höchster Präzision, Professionalität und Zuverlässigkeit.",
+    "DESCRIPTION2": "Ob Neubauten, Renovierungen, Sanierungen oder Modernisierungen – für private sowie öffentlich-gewerbliche Projekte: Wenn Sie einen kompetenten Partner für Ihr Bauvorhaben suchen, haben Sie ihn gefunden. Ich bin Ihr Fachmann für sämtliche Fliesenarbeiten!"
+  },
+  "BAD": {
+    "TITLE": "Badsanierung",
+    "DESCRIPTION1": "Kontaktieren Sie mich für eine ausführliche Badbesichtigung. Als Experte für Badsanierungen in Bestandsbauten zeige ich Ihnen bereits nach einer kurzen Beratung verschiedene Umbau- und Modernisierungsoptionen auf. Nach der Vermessung Ihres Badezimmers beginne ich mit der Planung, die sich nach Ihren Wünschen richtet.",
+    "DESCRIPTION2": "Nach der Planung starte ich die Arbeiten gemäß dem vereinbarten Termin. Mein erfahrenes Team führt alle Aufgaben effizient und sauber aus, während ich die Koordinierung und Überwachung übernehme. Selbstverständlich kümmere ich mich auch um Müllentsorgung und den Schutz Ihrer Einrichtung.",
+    "DESCRIPTION3": "Nutzen Sie meinen Komplettservice, um ein komfortables Badezimmer zu einem festen Preis und Termin zu erhalten.",
+    "TITLE_10_DAYS": "10-Tage-Komplettbad"
+  },
+  "MALER": {
+    "TITLE": "Malerarbeit",
+    "SUBTITLE": "Verwirklichen Sie Ihren Traum von einer neuen Innenraumgestaltung!",
+    "DESCRIPTION1": "Ich biete Ihnen fachgerechte Malerarbeiten für jeden Einrichtungsstil – von klassisch bis modern. Ob Neubau oder Renovierung, ich arbeite für private und gewerbliche Kunden in Berlin und Brandenburg.",
+    "DESCRIPTION2": "Mit dem Airless-Spritzverfahren kann ich hochwertige Farbpigmente und Lackmaterialien effizient und dauerhaft auftragen. Die Vorteile sind:",
+    "BENEFITS": {
+      "BENEFIT1": "Dickschicht-Anstriche ohne Verdünnung",
+      "BENEFIT2": "Hohe Quadratmeterleistung",
+      "BENEFIT3": "Geringerer Spritznebel im Vergleich zu herkömmlichen Verfahren"
+    },
+    "DESCRIPTION3": "Ich verwende ausschließlich hochwertige Farben und zeige Ihnen in einem Beratungstermin gerne Muster, damit Sie die passende Wahl treffen können. Bei besonderen Gestaltungsideen kümmere ich mich um die Beschaffung der Materialien."
+  },
+  "VENETIAN_PLASTER": {
+    "TITLE": "Venezianische Spachteltechnik",
+    "DESCRIPTION1": "Mit der Venezianischen Spachteltechnik bringe ich das elegante Aussehen von Marmor in Ihr Zuhause. Diese Methode verwandelt Wände in glänzende Oberflächen, die dem echten Stein täuschend ähnlich sind. Sie eignet sich hervorragend als Spritzschutz in der Küche und schafft eine ansprechende, natürliche Ästhetik.",
+    "SUBTITLE": "Mikrozement für Böden und Treppen",
+    "DESCRIPTION2": "Ich biete Mikrozementlösungen für Böden und Treppen an, die nicht nur robust, sondern auch pflegeleicht sind. Die spezielle Versiegelung sorgt für eine rutschfeste, wasserdichte Oberfläche, die einfach zu reinigen ist und den täglichen Herausforderungen standhält.",
+    "DESCRIPTION3": "Besonders für Treppen ist Mikrozement ideal, da die flexible Beschichtung sich perfekt an den Untergrund anpasst und gleichzeitig die Abriebfestigkeit erhöht. So können Sie wunderschöne, minimalistische Betontreppen gestalten, die das Gewicht nicht unnötig erhöhen und in Ihrem Wohnbereich hervorragend zur Geltung kommen."
+  },
+  "GALLERY": {
+    "TITLE": "Ein Blick auf Meine Arbeiten",
+    "IMAGE_ALT": "ausgewähltes Bild",
+    "CLOSE": "Schließen"
+  },
+  "TITLE": "Giuseppe Giancaspro Ihr Fliesenleger in Berlin und Brandenburg"
+}

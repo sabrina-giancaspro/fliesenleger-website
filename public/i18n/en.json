@@ -1,0 +1,60 @@
+{
+  "NAVBAR": {
+    "CALL_TO_ACTION": "Contact me at this number",
+    "SELECT_LANGUAGE": "Select Language",
+    "HOME": "Home",
+    "CONTACT": "Contact",
+    "ABOUT_ME": "About Me",
+    "SERVICES": "Services"
+  },
+  "CONTACT_INFO": {
+    "PHONE": "Phone",
+    "EMAIL": "Email"
+  },
+  "MODAL": {
+    "CLOSE": "Close"
+  },
+  "CARD_TITLES": {
+    "FLIESEN": "Tiling Work",
+    "BAD": "Bathroom Renovation",
+    "MALER": "Painting Work",
+    "BODEN": "Seamless Flooring",
+    "HAUSMEISTER": "Maintenance Service"
+  },
+  "FLIESEN": {
+    "DESCRIPTION1": "For over 30 years, I have been available as a tiler, since 2012 in Berlin and Brandenburg. I specialize in the professional installation of tiles, slabs, and mosaics in both indoor and outdoor areas. Whether in bathrooms, kitchens, on terraces, or stairs: I work with the utmost precision, professionalism, and reliability.",
+    "DESCRIPTION2": "Whether for new builds, renovations, restorations, or modernizations – for private and public commercial projects: If you are looking for a competent partner for your construction project, you have found it. I am your specialist for all tiling work!"
+  },
+  "BAD": {
+    "TITLE": "Bathroom Renovation",
+    "DESCRIPTION1": "Contact me for a detailed bathroom inspection. As an expert in bathroom renovations in existing buildings, I will show you various remodeling and modernization options after a brief consultation. After measuring your bathroom, I will begin planning according to your wishes.",
+    "DESCRIPTION2": "After planning, I will start the work according to the agreed schedule. My experienced team will carry out all tasks efficiently and cleanly, while I coordinate and supervise. Of course, I will also take care of waste disposal and protecting your furnishings.",
+    "DESCRIPTION3": "Take advantage of my complete service to get a comfortable bathroom at a fixed price and schedule.",
+    "TITLE_10_DAYS": "10-Day Complete Bathroom"
+  },
+  "MALER": {
+    "TITLE": "Painting Work",
+    "SUBTITLE": "Realize your dream of a new interior design!",
+    "DESCRIPTION1": "I offer professional painting work for every furnishing style – from classic to modern. Whether for new builds or renovations, I work for private and commercial clients in Berlin and Brandenburg.",
+    "DESCRIPTION2": "With the airless spray method, I can efficiently and permanently apply high-quality paint pigments and materials. The advantages are:",
+    "BENEFITS": {
+      "BENEFIT1": "Thick coats without dilution",
+      "BENEFIT2": "High square meter yield",
+      "BENEFIT3": "Less overspray compared to conventional methods"
+    },
+    "DESCRIPTION3": "I use only high-quality paints and am happy to show you samples during a consultation appointment, so you can make the right choice. For special design ideas, I take care of sourcing the materials."
+  },
+  "VENETIAN_PLASTER": {
+    "TITLE": "Venetian Plaster Technique",
+    "DESCRIPTION1": "With the Venetian plaster technique, I bring the elegant look of marble into your home. This method transforms walls into glossy surfaces that closely resemble real stone. It is excellent as a backsplash in the kitchen and creates an appealing, natural aesthetic.",
+    "SUBTITLE": "Microcement for Floors and Stairs",
+    "DESCRIPTION2": "I offer microcement solutions for floors and stairs that are not only durable but also low-maintenance. The special sealant provides a slip-resistant, waterproof surface that is easy to clean and withstands daily challenges.",
+    "DESCRIPTION3": "Microcement is especially ideal for stairs, as the flexible coating perfectly adapts to the substrate while increasing abrasion resistance. This allows you to create beautiful, minimalist concrete stairs that do not unnecessarily add weight and look great in your living area."
+  },
+  "GALLERY": {
+    "TITLE": "A Look at My Works",
+    "IMAGE_ALT": "selected image",
+    "CLOSE": "Close"
+  },
+  "TITLE": "Giuseppe Giancaspro your tiler in Berlin and Brandenburg"
+}

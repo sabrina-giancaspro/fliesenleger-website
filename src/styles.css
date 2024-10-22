@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@phosphor-icons/web/src/regular/style.css";
+@import "../node_modules/@phosphor-icons/web/src/fill/style.css";
+/* debug  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+a{
+ text-decoration: none; 
+
+}
+.container-custom {
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  gap: 10px;
+}
+
+.bg{
+  background-color: rgba(103, 103, 245, 0.24);
+  padding: 10px;
+}
+
+
+
+/* main style  */
+.main-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.main-image {
+  max-width: 40%;
+}
+
+.main-cards-rev {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-image-rev {
+  max-width: 50%; 
+}
+/* Media queries per tablet e dispositivi mobili */
+@media (max-width: 768px) {
+  .main-cards {
+    flex-direction: column;
+  }
+  .main-image {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px;
+  }
+  .main-cards-rev {
+    flex-direction: column;
+  }
+
+  .main-image-rev {
+    order: -1; 
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .ms-md-5 {
+    margin-left: 0;
+  }
+}

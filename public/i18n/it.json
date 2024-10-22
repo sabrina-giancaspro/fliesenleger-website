@@ -1,0 +1,60 @@
+{
+  "NAVBAR": {
+    "CALL_TO_ACTION": "Contattami al numero:",
+    "SELECT_LANGUAGE": "Seleziona la lingua",
+    "HOME": "Home",
+    "CONTACT": "Contatto",
+    "ABOUT_ME": "Chi sono",
+    "SERVICES": "Servizi"
+  },
+  "CONTACT_INFO": {
+    "PHONE": "Telefono",
+    "EMAIL": "Email"
+  },
+  "MODAL": {
+    "CLOSE": "Chiudi"
+  },
+  "CARD_TITLES": {
+    "FLIESEN": "Lavori di piastrellatura",
+    "BAD": "Ristrutturazione bagno",
+    "MALER": "Lavori di imbiancatura",
+    "BODEN": "Pavimentazione senza fughe",
+    "HAUSMEISTER": "Servizio di manutenzione"
+  },
+  "FLIESEN": {
+    "DESCRIPTION1": "Da oltre 30 anni sono a disposizione come piastrellista, dal 2012 a Berlino e nel Brandeburgo. Sono specializzato nella posa professionale di piastrelle, lastre e mosaici sia in ambienti interni che esterni. Che si tratti di bagni, cucine, terrazze o scale: lavoro con la massima precisione, professionalità e affidabilità.",
+    "DESCRIPTION2": "Che si tratti di nuove costruzioni, ristrutturazioni, restauri o modernizzazioni – per progetti privati e commerciali pubblici: Se stai cercando un partner competente per il tuo progetto edilizio, l'hai trovato. Sono il tuo specialista per tutti i lavori di piastrellatura!"
+  },
+  "BAD": {
+    "TITLE": "Ristrutturazione bagno",
+    "DESCRIPTION1": "Contattami per una visita dettagliata del bagno. Come esperto in ristrutturazioni di bagni in edifici esistenti, ti mostrerò già dopo una breve consulenza diverse opzioni di ristrutturazione e modernizzazione. Dopo aver misurato il tuo bagno, inizio a pianificare secondo le tue esigenze.",
+    "DESCRIPTION2": "Dopo la pianificazione, inizio i lavori secondo il termine concordato. Il mio team esperto eseguirà tutte le attività in modo efficiente e pulito, mentre io mi occuperò del coordinamento e della supervisione. Ovviamente, mi occupo anche della smaltimento dei rifiuti e della protezione dei tuoi arredi.",
+    "DESCRIPTION3": "Approfitta del mio servizio completo per ottenere un bagno confortevole a un prezzo e un termine fissi.",
+    "TITLE_10_DAYS": "Bagno completo in 10 giorni"
+  },
+  "MALER": {
+    "TITLE": "Lavoro di verniciatura",
+    "SUBTITLE": "Realizza il tuo sogno di un nuovo design d'interni!",
+    "DESCRIPTION1": "Offro lavori di verniciatura professionali per ogni stile d'arredo – da classico a moderno. Sia per nuove costruzioni che per ristrutturazioni, lavoro per clienti privati e commerciali a Berlino e Brandenburg.",
+    "DESCRIPTION2": "Con il metodo di spruzzatura Airless posso applicare pigmenti di alta qualità e materiali di vernice in modo efficiente e durevole. I vantaggi sono:",
+    "BENEFITS": {
+      "BENEFIT1": "Rivestimenti spessi senza diluizione",
+      "BENEFIT2": "Elevata resa in metri quadrati",
+      "BENEFIT3": "Minore nebulizzazione rispetto ai metodi tradizionali"
+    },
+    "DESCRIPTION3": "Utilizzo esclusivamente colori di alta qualità e sono felice di mostrarti campioni in un incontro di consulenza, in modo che tu possa fare la scelta giusta. Per idee di design particolari, mi occupo dell'approvvigionamento dei materiali."
+  },
+  "VENETIAN_PLASTER": {
+    "TITLE": "Tecnica di stucco veneziano",
+    "DESCRIPTION1": "Con la tecnica di stucco veneziano porto l'elegante aspetto del marmo nella tua casa. Questo metodo trasforma le pareti in superfici lucide, che sembrano straordinariamente simili alla vera pietra. È particolarmente adatto come splendido rivestimento per la cucina, creando un'estetica naturale e accattivante.",
+    "SUBTITLE": "Microcemento per pavimenti e scale",
+    "DESCRIPTION2": "Offro soluzioni in microcemento per pavimenti e scale che non solo sono robuste, ma anche facili da mantenere. La speciale sigillatura garantisce una superficie antiscivolo e impermeabile, facile da pulire e in grado di resistere alle sfide quotidiane.",
+    "DESCRIPTION3": "Particolarmente per le scale, il microcemento è ideale, poiché il rivestimento flessibile si adatta perfettamente al substrato, aumentando al contempo la resistenza all'usura. In questo modo, puoi creare bellissime scale in cemento minimaliste che non aggiungono peso inutilmente e si integrano perfettamente nel tuo spazio abitativo."
+  },
+  "GALLERY": {
+    "TITLE": "Uno sguardo ai miei lavori",
+    "IMAGE_ALT": "immagine selezionata",
+    "CLOSE": "Chiudi"
+  },
+    "TITLE": "Giuseppe Giancaspro Il tuo piastrellista a Berlino e Brandeburgo"
+}

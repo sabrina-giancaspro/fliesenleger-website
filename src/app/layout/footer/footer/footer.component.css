@@ -1,0 +1,40 @@
+.bg-footer {
+  background-color: rgba(103, 103, 245, 0.24);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-list li {
+  margin: 5px 0;
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Media Query per mobile e tablet */
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    order: 2;
+  }
+
+  .left-list {
+    order: -1;
+  }
+  .footer-none {
+    display: none;
+  }
+  .footer-icons {
+    display: flex;
+    gap: 10px; 
+  }
+}

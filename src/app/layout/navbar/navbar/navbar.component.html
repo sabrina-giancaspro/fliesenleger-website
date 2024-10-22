@@ -1,0 +1,113 @@
+<!-- Navbar -->
+<header class="bg-img">
+  <h1 class="title-center">{{ typedText$ | async }}</h1>
+  <nav class="navbar navbar-expand-lg bg-header fs-5" style="z-index: 9999; position: sticky; top: 0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" class="logo" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">
+              <i class="ph ph-phone"></i>{{ "NAVBAR.CONTACT" | translate }}
+            </a>
+          </li>
+          
+          <!-- Dropdown per la lingua (solo desktop) -->
+          <li class="nav-item dropdown d-none d-md-block">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{ "NAVBAR.SELECT_LANGUAGE" | translate }}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#" (click)="switchLanguage('en')">
+                <img src="en.jpg" alt="" class="me-2" width="20" /> English
+              </a></li>
+              <li><a class="dropdown-item" href="#" (click)="switchLanguage('de')">
+                <img src="de.jpg" alt="" class="me-2" width="20" /> Deutsch
+              </a></li>
+              <li><a class="dropdown-item" href="#" (click)="switchLanguage('it')">
+                <img src="it.jpg" alt="" class="me-2" width="20" /> Italiano
+              </a></li>
+            </ul>
+          </li>
+
+          <!-- Bottone per attivare il modale della lingua (solo mobile) -->
+          <li class="nav-item d-block d-md-none modal-toggle-lang">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#languageModal">
+              {{ "NAVBAR.SELECT_LANGUAGE" | translate }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">
+          {{ "NAVBAR.CONTACT" | translate }}
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body fs-5 d-flex gap-1 flex-column">
+        <p class="d-flex gap-3 align-items-center fw-bold">
+          {{ "CONTACT_INFO.PHONE" | translate }}: +49 123 456 789
+        </p>
+        <p class="d-flex gap-3 align-items-center fw-bold">
+          {{ "CONTACT_INFO.EMAIL" | translate }}: infoiancaspro.com
+        </p>
+        <img src="logo.png" alt="" style="max-width: 120px" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          {{ "MODAL.CLOSE" | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modale per la selezione della lingua (solo per mobile) -->
+<div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="languageModalLabel">
+          {{ "NAVBAR.SELECT_LANGUAGE" | translate }}
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex flex-column gap-3 align-items-center">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="language" id="langEn" (click)="switchLanguage('en')">
+          <label class="form-check-label" for="langEn">
+            <img src="en.jpg" alt="" class="me-2" width="20" /> English
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="language" id="langDe" (click)="switchLanguage('de')">
+          <label class="form-check-label" for="langDe">
+            <img src="de.jpg" alt="" class="me-2" width="20" /> Deutsch
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="language" id="langIt" (click)="switchLanguage('it')">
+          <label class="form-check-label" for="langIt">
+            <img src="it.jpg" alt="" class="me-2" width="20" /> Italiano
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ "MODAL.CLOSE" | translate }}</button>
+      </div>
+    </div>
+  </div>
+</div>

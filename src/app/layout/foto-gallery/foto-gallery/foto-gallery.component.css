@@ -1,0 +1,45 @@
+.big {
+  width: 60%;
+  height: 500px;
+  background-image: url(/top-big.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.small {
+  width: 30%;
+  height: 500px;
+  background-image: url(/small-top.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.big-bottom {
+  width: 60%;
+  height: 500px;
+  background-image: url(/badsan.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.small-bottom {
+  width: 30%;
+  height: 500px;
+  background-image: url(/small-bottom.png);
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+.carousel-image {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover; 
+}
