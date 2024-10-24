@@ -1,91 +1,88 @@
 <div class="container">
   <div class="card-custom shadow-lg d-none d-md-block">
     <div class="card-body-left bg-card d-flex flex-column flex-md-row align-items-center justify-content-between">
-      <!-- Immagine che occupa metà larghezza -->
       <img src="contact.png" alt="Contact" class="me-3 w-50 d-none d-md-block" />
 
-      <!-- Form di contatto che occupa l'altra metà -->
       <div class="form-contact w-50 me-3">
         <form class="contact-form" (submit)="sendEmail($event)">
           <div class="mb-3">
             <label for="user_name" class="form-label">{{ 'CONTACT.NAME' | translate}}</label>
-            <input type="text" class="form-control" id="user_name" name="user_name" [(ngModel)]="userName"  required />
+            <input type="text" class="form-control" id="user_name" name="user_name" [(ngModel)]="userName" required />
           </div>
           <div class="mb-3">
             <label for="user_email" class="form-label">{{ 'CONTACT.EMAIL' | translate }}</label>
             <input type="email" class="form-control" id="user_email" name="user_email" [(ngModel)]="userEmail" (ngModelChange)="validateEmail()" required />
-            <div *ngIf="emailErrorMessage" class="text-danger">{{'ERRORS.INVALID_EMAIL' | translate}}</div>
+            <div *ngIf="emailErrorMessage" class="text-danger">{{ emailErrorMessage }}</div>
           </div>
           <div class="mb-3">
-            <label for="message" class="form-label">{{'CONTACT.MESSAGE' | translate}}</label>
+            <label for="message" class="form-label">{{ 'CONTACT.MESSAGE' | translate }}</label>
             <textarea class="form-control" rows="3" id="message" name="message" [(ngModel)]="userMessage" required></textarea>
           </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" name="privacy" class="form-check-input" [(ngModel)]="privacyChecked" (change)="validatePrivacy()" required />
-            <label class="form-check-label" for="exampleCheck1">
-               <a aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">{{'CONTACT.PRIVACY_POLICY' | translate}}</a>
+          <div class="mb-3 form-check d-flex gap-2">
+            <input 
+              type="checkbox" 
+              id="privacy-checkbox" 
+              class="form-check-input" 
+              [(ngModel)]="privacyChecked" 
+              [disabled]="true" 
+              required />
+            <label class="form-check-label" for="privacy-checkbox">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">{{ 'CONTACT.PRIVACY_POLICY' | translate }}</a>
             </label>
-            <div *ngIf="privacyErrorMessage" class="text-danger">{{ 'ERRORS.PRIVACY_REQUIRED' | translate}}</div>
+            <div *ngIf="privacyErrorMessage" class="text-danger">{{ 'ERRORS.PRIVACY_REQUIRED' | translate }}</div>
           </div>
-          <button type="submit" class="btn btn-primary">{{'CONTACT.SEND' | translate}}</button>
+          <button type="submit" class="btn btn-primary" [disabled]="!privacyChecked">{{ 'CONTACT.SEND' | translate }}</button>
         </form>
-        <div *ngIf="successMessage" class="alert alert-success mt-3">{{ 'CONTACT.SUCCESS_MESSAGE' | translate}}</div>
-        <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ 'CONTACT.ERROR_MESSAGE'| translate }}</div>
+        <div *ngIf="successMessage" class="alert alert-success mt-3">{{ 'CONTACT.SUCCESS_MESSAGE' | translate }}</div>
+        <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ 'CONTACT.ERROR_MESSAGE' | translate }}</div>
       </div>
     </div>
   </div>
 
   <!-- Modal per dispositivi mobili -->
-  <div class="card-custom d-block d-md-none p-3"> <!-- Modifica qui -->
+  <div class="card-custom d-block d-md-none p-3">
     <div class="form-contact">
       <form class="contact-form" (submit)="sendEmail($event)">
         <div class="mb-3">
-          <label for="user_name" class="form-label">{{ 'CONTACT.NAME' | translate}}</label>
-          <input type="text" class="form-control" id="user_name" name="user_name" [(ngModel)]="userName"  required />
+          <label for="user_name" class="form-label">{{ 'CONTACT.NAME' | translate }}</label>
+          <input type="text" class="form-control" id="user_name" name="user_name" [(ngModel)]="userName" required />
         </div>
         <div class="mb-3">
-          <label for="user_email" class="form-label">{{ 'CONTACT.EMAIL' | translate}}</label>
+          <label for="user_email" class="form-label">{{ 'CONTACT.EMAIL' | translate }}</label>
           <input type="email" class="form-control" id="user_email" name="user_email" [(ngModel)]="userEmail" (ngModelChange)="validateEmail()" required />
           <div *ngIf="emailErrorMessage" class="text-danger">{{ emailErrorMessage }}</div>
         </div>
         <div class="mb-3">
-          <label for="message" class="form-label">{{'CONTACT.MESSAGE'| translate}}</label>
+          <label for="message" class="form-label">{{ 'CONTACT.MESSAGE' | translate }}</label>
           <textarea class="form-control" rows="3" id="message" name="message" [(ngModel)]="userMessage" required></textarea>
+          <div *ngIf="errorMessage && !userMessage.trim()" class="text-danger">{{ errorMessage}}</div>
         </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" name="privacy" class="form-check-input" [(ngModel)]="privacyChecked" (change)="validatePrivacy()" required />
-          <label class="form-check-label" for="exampleCheck1">
-           <a aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">{{'CONTACT.PRIVACY_POLICY' | translate}}</a>
+          <input 
+            type="checkbox" 
+            id="privacy-checkbox" 
+            class="form-check-input" 
+            [(ngModel)]="privacyChecked" 
+            required />
+          <label class="form-check-label" for="privacy-checkbox">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">{{ 'CONTACT.PRIVACY_POLICY' | translate }}</a>
           </label>
-          <div *ngIf="privacyErrorMessage" class="text-danger">{{ 'ERRORS.PRIVACY_REQUIRED' | translate}}</div>
+          <div *ngIf="privacyErrorMessage" class="text-danger">{{ 'ERRORS.PRIVACY_REQUIRED' | translate }}</div>
         </div>
-        <button type="submit" class="btn btn-primary">{{'CONTACT.SEND' | translate}}</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!privacyChecked">{{ 'CONTACT.SEND' | translate }}</button>
       </form>
-      <div *ngIf="successMessage" class="alert alert-success mt-3">{{ 'CONTACT.SUCCESS_MESSAGE' | translate}}</div>
-      <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ 'CONTACT.ERROR_MESSAGE' | translate}}</div>
+      <div *ngIf="successMessage" class="alert alert-success mt-3">{{ 'CONTACT.SUCCESS_MESSAGE' | translate }}</div>
+      <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ 'CONTACT.ERROR_MESSAGE' | translate }}</div>
     </div>
   </div>
-</div> 
-<div
-  class="modal fade"
-  id="privacyPolicyModal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="privacyPolicyModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog" role="document">
+</div>
+
+<div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyLabel" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header d-flex justify-content-between">
-        <h5 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h5>
-        <button
-          type="button"
-          class="btn btn-secondary close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        >
-          <i class="ph ph-x"></i>
-        </button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="privacyPolicyLabel">{{ 'CONTACT.PRIVACY_POLICY' | translate }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <h1>Privacy Policy</h1>

@@ -78,8 +78,9 @@
   "ERRORS": {
     "NAME_TOO_SHORT": "The name must be at least 3 characters long.",
     "INVALID_EMAIL": "Please enter a valid email.",
-    "PRIVACY_REQUIRED": "You must accept the privacy policy to send the message.",
-    "SENDING_ERROR": "Error sending the message: {{error}}"
+    "PRIVACY_REQUIRED": "You must read the privacy policy to send the message.",
+    "SENDING_ERROR": "Error sending the message: {{error}}",
+    "EMPTY_MESSAGE": "The message field cannot be empty."
   },
   "SUCCESS": {
     "MESSAGE_SENT": "Message sent successfully!"

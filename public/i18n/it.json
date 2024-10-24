@@ -78,8 +78,9 @@
   "ERRORS": {
     "NAME_TOO_SHORT": "Il nome deve essere lungo almeno 3 lettere.",
     "INVALID_EMAIL": "Inserisci un'email valida.",
-    "PRIVACY_REQUIRED": "Devi accettare la privacy policy per inviare il messaggio.",
-    "SENDING_ERROR": "Errore durante l'invio del messaggio: {{error}}"
+    "PRIVACY_REQUIRED": "Devi leggere la privacy policy per inviare il messaggio.",
+    "SENDING_ERROR": "Errore durante l'invio del messaggio: {{error}}",
+    "EMPTY_MESSAGE": "Il campo del messaggio non può essere vuoto."
   },
   "SUCCESS": {
     "MESSAGE_SENT": "Messaggio inviato con successo!"

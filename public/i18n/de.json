@@ -78,8 +78,9 @@
   "ERRORS": {
     "NAME_TOO_SHORT": "Der Name muss mindestens 3 Zeichen lang sein.",
     "INVALID_EMAIL": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
-    "PRIVACY_REQUIRED": "Sie müssen die Datenschutzrichtlinie akzeptieren, um die Nachricht zu senden.",
-    "SENDING_ERROR": "Fehler beim Senden der Nachricht: {{error}}"
+    "PRIVACY_REQUIRED": "Sie müssen die Datenschutzrichtlinie lesen, um die Nachricht zu senden.",
+    "SENDING_ERROR": "Fehler beim Senden der Nachricht: {{error}}",
+    "EMPTY_MESSAGE": "Das Nachrichtenfeld darf nicht leer sein."
   },
   "SUCCESS": {
     "MESSAGE_SENT": "Nachricht erfolgreich gesendet!"
