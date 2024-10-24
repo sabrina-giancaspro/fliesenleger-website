@@ -67,10 +67,10 @@ export class ContactUsComponent implements AfterViewInit {
       return;
     }
 
-  // Controlla se il campo del messaggio è vuoto
+    // Controlla se il campo del messaggio è vuoto
     if (!this.userMessage.trim()) {
-        this.errorMessage = this.translate.instant('ERRORS.EMPTY_MESSAGE');
-        return; // Termina qui se il messaggio è vuoto
+      this.errorMessage = this.translate.instant('ERRORS.EMPTY_MESSAGE');
+      return; // Termina qui se il messaggio è vuoto
     }
 
     emailjs.sendForm('service_t6f9ygl', 'template_4t588r9', e.target as HTMLFormElement, {
@@ -80,13 +80,17 @@ export class ContactUsComponent implements AfterViewInit {
         () => {
           this.successMessage = this.translate.instant('SUCCESS.MESSAGE_SENT');
           this.resetForm();
+
+          // Nascondi il messaggio di successo dopo 5 secondi
+          setTimeout(() => {
+            this.successMessage = '';
+          }, 5000);
         },
         (error) => {
           this.errorMessage = this.translate.instant('ERRORS.SENDING_ERROR', { error: (error as EmailJSResponseStatus).text });
         },
       );
-  }
-
+    }
   // Funzione per validare l'email
   private isValidEmail(email: string): boolean {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
