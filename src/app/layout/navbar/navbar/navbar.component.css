@@ -1,5 +1,5 @@
 .bg-header {
-  background-color: #e7e5e581;
+  background-color: #ffffffb9;
 }
 .logo{
   max-width: 40%;
@@ -23,11 +23,11 @@
 
 .title-center {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   text-align: center;
   z-index: 2;
@@ -51,7 +51,7 @@ html {
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(110, 110, 110, 0.384);
   color: #007bff;
   border-radius: 5px;
 }
@@ -91,4 +91,7 @@ html {
   .bg-img {
     height: 400px;
   }
+}
+html {
+  scroll-behavior: smooth;
 }

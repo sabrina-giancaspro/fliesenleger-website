@@ -10,9 +10,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <a class="nav-link active" aria-current="page" href="#footer"  (click)="scrollToFooter()" data-bs-toggle="modal" data-bs-target="#contactModal">
               <i class="ph ph-phone"></i>{{ "NAVBAR.CONTACT" | translate }}
             </a>
           </li>
@@ -46,34 +46,6 @@
     </div>
   </nav>
 </header>
-
-<!-- Contact Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="contactModalLabel">
-          {{ "NAVBAR.CONTACT" | translate }}
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body fs-5 d-flex gap-1 flex-column">
-        <p class="d-flex gap-3 align-items-center fw-bold">
-          {{ "CONTACT_INFO.PHONE" | translate }}: +49 123 456 789
-        </p>
-        <p class="d-flex gap-3 align-items-center fw-bold">
-          {{ "CONTACT_INFO.EMAIL" | translate }}: infoiancaspro.com
-        </p>
-        <img src="logo.png" alt="" style="max-width: 120px" />
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          {{ "MODAL.CLOSE" | translate }}
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Modale per la selezione della lingua (solo per mobile) -->
 <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">

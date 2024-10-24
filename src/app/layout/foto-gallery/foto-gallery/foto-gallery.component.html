@@ -1,55 +1,116 @@
-<div class="container mt-5 d-flex flex-column gap-5">
+<div class="container d-flex flex-column gap-5 foto-gallery-section">
   <h2 class="text-center mt-5">
     {{ "GALLERY.TITLE" | translate }}
   </h2>
 
   <!-- Carousel for mobile and tablet -->
-  <div id="galleryCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+  <div
+    id="galleryCarousel"
+    class="carousel slide d-md-none"
+    data-bs-ride="carousel"
+  >
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="top-big.png" class="d-block w-100 img-thumbnail carousel-image" alt="Top Big" />
+        <img
+          src="top-big.png"
+          class="d-block w-100 img-thumbnail carousel-image"
+          alt="Top Big"
+        />
       </div>
       <div class="carousel-item">
-        <img src="small-top.png" class="d-block w-100 img-thumbnail carousel-image" alt="Small Top" />
+        <img
+          src="small-top.png"
+          class="d-block w-100 img-thumbnail carousel-image"
+          alt="Small Top"
+        />
       </div>
       <div class="carousel-item">
-        <img src="small-bottom.png" class="d-block w-100 img-thumbnail carousel-image" alt="Small Bottom" />
+        <img
+          src="small-bottom.png"
+          class="d-block w-100 img-thumbnail carousel-image"
+          alt="Small Bottom"
+        />
       </div>
       <div class="carousel-item">
-        <img src="badsan.png" class="d-block w-100 img-thumbnail carousel-image" alt="Badsan" />
+        <img
+          src="badsan.jpg"
+          class="d-block w-100 img-thumbnail carousel-image"
+          alt="Badsan"
+        />
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#galleryCarousel"
+      data-bs-slide="prev"
+    >
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">{{ "GALLERY.PREV" | translate }}</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#galleryCarousel"
+      data-bs-slide="next"
+    >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">{{ "GALLERY.NEXT" | translate }}</span>
     </button>
   </div>
-  
 
   <!-- Grid view for desktop -->
   <div class="d-none d-md-flex gap-5 justify-content-center">
-    <img class="big img-thumbnail" (click)="selectedImage = 'top-big.png'" data-bs-toggle="modal" data-bs-target="#imageModal" />
-    <img class="small img-thumbnail" (click)="selectedImage = 'small-top.png'" data-bs-toggle="modal" data-bs-target="#imageModal" />
+    <img
+      class="big img-thumbnail"
+      (click)="selectedImage = 'top-big.png'"
+      data-bs-toggle="modal"
+      data-bs-target="#imageModal"
+    />
+    <img
+      class="small img-thumbnail"
+      (click)="selectedImage = 'small-top.png'"
+      data-bs-toggle="modal"
+      data-bs-target="#imageModal"
+    />
   </div>
   <div class="d-none d-md-flex gap-5 justify-content-center">
-    <img class="small-bottom img-thumbnail" (click)="selectedImage = 'small-bottom.png'" data-bs-toggle="modal" data-bs-target="#imageModal" />
-    <img class="big-bottom img-thumbnail" (click)="selectedImage = 'badsan.png'" data-bs-toggle="modal" data-bs-target="#imageModal" />
+    <img
+      class="small-bottom img-thumbnail"
+      (click)="selectedImage = 'small-bottom.png'"
+      data-bs-toggle="modal"
+      data-bs-target="#imageModal"
+    />
+    <img
+      class="big-bottom img-thumbnail"
+      (click)="selectedImage = 'badsan.jpg'"
+      data-bs-toggle="modal"
+      data-bs-target="#imageModal"
+    />
   </div>
 </div>
 
 <!-- Modal for displaying large images -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  id="imageModal"
+  tabindex="-1"
+  aria-labelledby="imageModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog modal-lg">
     <div class="modal-content align-items-center">
       <div class="modal-body">
-        <img [src]="selectedImage" class="img-fluid" alt="{{ 'GALLERY.IMAGE_ALT' | translate }}" />
+        <img
+          [src]="selectedImage"
+          class="img-fluid"
+          alt="{{ 'GALLERY.IMAGE_ALT' | translate }}"
+        />
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ "GALLERY.CLOSE" | translate }}</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          {{ "GALLERY.CLOSE" | translate }}
+        </button>
       </div>
     </div>
   </div>

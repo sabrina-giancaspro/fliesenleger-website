@@ -1,0 +1,38 @@
+.card-custom{
+    width: 100%;
+    max-width: 900px;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+.bg-card{
+    background-color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .card-custom.d-block {
+        border: none; /* Nessun bordo */
+        box-shadow: none; /* Nessun ombra */
+        background-color: transparent; /* Nessuno sfondo */
+        padding: 0; /* Rimuovi padding */
+    }
+
+    .form-contact {
+        border: none;
+        width: 100%; /* Mantiene il form a larghezza piena */
+        margin: 0; /* Rimuovi margine */
+    }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}

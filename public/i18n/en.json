@@ -56,5 +56,33 @@
     "IMAGE_ALT": "selected image",
     "CLOSE": "Close"
   },
+  "FOOTER": {
+    "CONTACT_ME": "Contact me",
+    "ADDRESS": "Am Dachsbau 64, 13503 Berlin",
+    "WHATSAPP_MESSAGE": "WhatsApp Message",
+    "HOURS": {
+      "TITLE": "Hours:",
+      "MON_FRI": "Monday - Friday:",
+      "SAT_SUN": "Saturday - Sunday: Closed"
+    }
+  },
+  "CONTACT": {
+    "NAME": "Name:",
+    "EMAIL": "Email:",
+    "MESSAGE": "Message:",
+    "PRIVACY_POLICY": "I accept the privacy policy",
+    "SEND": "Send",
+    "SUCCESS_MESSAGE": "Message sent successfully!",
+    "ERROR_MESSAGE": "There was an error sending the message."
+  },
+  "ERRORS": {
+    "NAME_TOO_SHORT": "The name must be at least 3 characters long.",
+    "INVALID_EMAIL": "Please enter a valid email.",
+    "PRIVACY_REQUIRED": "You must accept the privacy policy to send the message.",
+    "SENDING_ERROR": "Error sending the message: {{error}}"
+  },
+  "SUCCESS": {
+    "MESSAGE_SENT": "Message sent successfully!"
+  },
   "TITLE": "Giuseppe Giancaspro your tiler in Berlin and Brandenburg"
 }

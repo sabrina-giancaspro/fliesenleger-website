@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms'; 
 
 import { AppComponent } from './app.component';
 import { FliesenComponent } from './layout/fliesen/fliesen/fliesen.component';
@@ -13,6 +13,8 @@ import { BodenComponent } from './layout/boden/boden/boden.component';
 import { FotoGalleryComponent } from './layout/foto-gallery/foto-gallery/foto-gallery.component';
 import { FooterComponent } from './layout/footer/footer/footer.component';
 import { NavbarComponent } from './layout/navbar/navbar/navbar.component';
+import { ContactUsComponent } from './layout/contact-form/contact-form.component';
+
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { NavbarComponent } from './layout/navbar/navbar/navbar.component';
     MalerComponent,
     BodenComponent,
     FotoGalleryComponent,
-    FooterComponent
+    FooterComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

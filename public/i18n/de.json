@@ -56,5 +56,33 @@
     "IMAGE_ALT": "ausgewähltes Bild",
     "CLOSE": "Schließen"
   },
+  "FOOTER": {
+    "CONTACT_ME": "Kontaktiere mich",
+    "ADDRESS": "Am Dachsbau 64, 13503 Berlin",
+    "WHATSAPP_MESSAGE": "WhatsApp-Nachricht",
+    "HOURS": {
+      "TITLE": "Öffnungszeiten:",
+      "MON_FRI": "Montag - Freitag:",
+      "SAT_SUN": "Samstag - Sonntag: Geschlossen"
+    }
+  },
+  "CONTACT": {
+    "NAME": "Name:",
+    "EMAIL": "Email:",
+    "MESSAGE": "Nachricht:",
+    "PRIVACY_POLICY": "Ich akzeptiere die Datenschutzbestimmungen",
+    "SEND": "Senden",
+    "SUCCESS_MESSAGE": "Nachricht erfolgreich gesendet!",
+    "ERROR_MESSAGE": "Beim Senden der Nachricht ist ein Fehler aufgetreten."
+  },
+  "ERRORS": {
+    "NAME_TOO_SHORT": "Der Name muss mindestens 3 Zeichen lang sein.",
+    "INVALID_EMAIL": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "PRIVACY_REQUIRED": "Sie müssen die Datenschutzrichtlinie akzeptieren, um die Nachricht zu senden.",
+    "SENDING_ERROR": "Fehler beim Senden der Nachricht: {{error}}"
+  },
+  "SUCCESS": {
+    "MESSAGE_SENT": "Nachricht erfolgreich gesendet!"
+  },
   "TITLE": "Giuseppe Giancaspro Ihr Fliesenleger in Berlin und Brandenburg"
 }

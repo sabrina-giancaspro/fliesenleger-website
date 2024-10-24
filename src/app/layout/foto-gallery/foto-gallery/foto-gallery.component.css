@@ -17,7 +17,7 @@
 .big-bottom {
   width: 60%;
   height: 500px;
-  background-image: url(/badsan.png);
+  background-image: url(/badsan.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -42,4 +42,11 @@ img:hover {
   width: 100%;
   height: 400px; 
   object-fit: cover; 
+}
+
+.foto-gallery-section{
+  padding: 10px;
+  margin-top: 100px;
+  border-radius: 10px;
+  padding-bottom: 100px;
 }
