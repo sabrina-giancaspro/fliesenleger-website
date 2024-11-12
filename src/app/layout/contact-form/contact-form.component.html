@@ -6,7 +6,7 @@
       <div class="form-contact w-50 me-3">
         <form class="contact-form" (submit)="sendEmail($event)">
           <div class="mb-3">
-            <label for="user_name" class="form-label">{{ 'CONTACT.NAME' | translate}}</label>
+            <label for="user_name" class="form-label">{{ 'CONTACT.NAME' | translate }}</label>
             <input type="text" class="form-control" id="user_name" name="user_name" [(ngModel)]="userName" required />
           </div>
           <div class="mb-3">
@@ -24,6 +24,7 @@
               id="privacy-checkbox" 
               class="form-check-input" 
               [(ngModel)]="privacyChecked" 
+              name="privacyChecked" 
               [disabled]="true" 
               required />
             <label class="form-check-label" for="privacy-checkbox">
@@ -55,7 +56,7 @@
         <div class="mb-3">
           <label for="message" class="form-label">{{ 'CONTACT.MESSAGE' | translate }}</label>
           <textarea class="form-control" rows="3" id="message" name="message" [(ngModel)]="userMessage" required></textarea>
-          <div *ngIf="errorMessage && !userMessage.trim()" class="text-danger">{{ errorMessage}}</div>
+          <div *ngIf="errorMessage && !userMessage.trim()" class="text-danger">{{ errorMessage }}</div>
         </div>
         <div class="mb-3 form-check">
           <input 
@@ -63,6 +64,7 @@
             id="privacy-checkbox" 
             class="form-check-input" 
             [(ngModel)]="privacyChecked" 
+            name="privacyChecked" 
             required />
           <label class="form-check-label" for="privacy-checkbox">
             <a href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">{{ 'CONTACT.PRIVACY_POLICY' | translate }}</a>
@@ -76,6 +78,7 @@
     </div>
   </div>
 </div>
+
 
 <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyLabel" aria-hidden="true">
   <div class="modal-dialog">

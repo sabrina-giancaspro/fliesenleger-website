@@ -10,22 +10,18 @@ import { TranslateService } from '@ngx-translate/core';
 export class ContactUsComponent implements AfterViewInit {
   public successMessage: string = '';
   public errorMessage: string = '';
-  public nameErrorMessage: string = '';
   public emailErrorMessage: string = '';
   public privacyErrorMessage: string = '';
   public userName: string = '';
   public userEmail: string = '';
   public userMessage: string = '';
   public privacyChecked: boolean = false;
-  public privacyOpened: boolean = false;
-
 
   @ViewChild('privacyPolicyModal') privacyPolicyModal!: ElementRef;
 
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang('de');
   }
-
 
   ngAfterViewInit() {
     const privacyModalElement = document.getElementById('privacyPolicyModal');
@@ -34,26 +30,21 @@ export class ContactUsComponent implements AfterViewInit {
     if (privacyModalElement) {
       // Event listener per quando il modal viene aperto
       privacyModalElement.addEventListener('shown.bs.modal', () => {
-        this.privacyOpened = true; // Traccia che il modal è stato aperto
+        // Modifica lo stato della checkbox quando il modal è aperto
+        privacyCheckbox.disabled = false;
+        privacyCheckbox.checked = true;
+        this.privacyChecked = true;
       });
 
-      // Event listener per quando il modal viene chiuso
-      privacyModalElement.addEventListener('hidden.bs.modal', () => {
-        if (this.privacyOpened) {
-          // Abilita la checkbox e selezionala automaticamente
-          privacyCheckbox.disabled = false;
-          privacyCheckbox.checked = true;
-          this.privacyChecked = true;
-        }
-      });
+   
     }
   }
+
   // Funzione per inviare l'email
   public sendEmail(e: Event) {
     e.preventDefault();
     this.successMessage = '';
     this.errorMessage = '';
-    this.nameErrorMessage = '';
     this.emailErrorMessage = '';
     this.privacyErrorMessage = '';
 
@@ -67,20 +58,21 @@ export class ContactUsComponent implements AfterViewInit {
       return;
     }
 
-    // Controlla se il campo del messaggio è vuoto
+    // Verifica se il messaggio è vuoto
     if (!this.userMessage.trim()) {
       this.errorMessage = this.translate.instant('ERRORS.EMPTY_MESSAGE');
-      return; // Termina qui se il messaggio è vuoto
+      return;
     }
 
-    emailjs.sendForm('service_t6f9ygl', 'template_4t588r9', e.target as HTMLFormElement, {
-      publicKey: 'ETQGHKXGPx9JlVTxD',
+    // Invia l'email utilizzando EmailJS
+    emailjs.sendForm('service_1wp7g0m', 'template_z7n615r', e.target as HTMLFormElement, {
+      publicKey: '1TRsI3cA8eyQap1u7',
     })
       .then(
         () => {
-          this.successMessage = this.translate.instant('SUCCESS.MESSAGE_SENT');
+          this.successMessage = this.translate.instant('CONTACT.SUCCESS_MESSAGE');
           this.resetForm();
-
+          
           // Nascondi il messaggio di successo dopo 5 secondi
           setTimeout(() => {
             this.successMessage = '';
@@ -88,9 +80,10 @@ export class ContactUsComponent implements AfterViewInit {
         },
         (error) => {
           this.errorMessage = this.translate.instant('ERRORS.SENDING_ERROR', { error: (error as EmailJSResponseStatus).text });
-        },
+        }
       );
-    }
+  }
+
   // Funzione per validare l'email
   private isValidEmail(email: string): boolean {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -102,19 +95,15 @@ export class ContactUsComponent implements AfterViewInit {
     this.userName = '';
     this.userEmail = '';
     this.userMessage = '';
-    this.privacyChecked = false;
+
   }
 
-
+  // Funzione di validazione per l'email
   public validateEmail() {
     if (!this.isValidEmail(this.userEmail)) {
-      this.emailErrorMessage = this.translate.instant('ERRORS.INVALID_EMAIL'); // Traduci il messaggio di errore
+      this.emailErrorMessage = this.translate.instant('ERRORS.INVALID_EMAIL');
     } else {
       this.emailErrorMessage = '';
     }
-  }
-
-  public validatePrivacy() {
-    this.privacyErrorMessage = this.privacyChecked ? '' : this.translate.instant('ERRORS.PRIVACY_REQUIRED');
   }
 }
