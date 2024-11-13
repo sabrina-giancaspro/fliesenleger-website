@@ -55,7 +55,6 @@ a {
   margin-left: 15px;
 }
 
-/* Media queries per tablet e dispositivi mobili */
 @media (max-width: 768px) {
   .main-cards {
     flex-direction: column;

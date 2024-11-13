@@ -17,7 +17,6 @@
    color: black;
 }
 
-/* Media Query per mobile e tablet */
 @media (max-width: 768px) {
   .footer {
     display: flex;
@@ -42,10 +41,10 @@
 
 
 .footer {
-  text-align: center; /* Assicura che tutto il testo sia centrato */
+  text-align: center;
 }
 .footer .left-list {
-  margin-bottom: 20px; /* Aggiungi margine per separare il logo e il resto */
+  margin-bottom: 20px;
 }
 
 ul{

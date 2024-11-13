@@ -56,7 +56,6 @@ html {
   border-radius: 5px;
 }
 
-/* Media queries per schermi più piccoli */
 @media (max-width: 1200px) {
   .bg-img {
     height: 600px;
